@@ -1,0 +1,54 @@
+<table>
+    <tr>
+        <td>Use Case Name</td>
+        <td>Admin thêm người dùng mới vào hệ thống</td>
+    </tr>
+    <tr>
+        <td>Trigger</td>
+        <td>Admin chọn ”thêm người dùng” trong trang quản lý người dùng.</td>
+    </tr>
+    <tr>
+        <td>Precondition</td>
+        <td>1. Người dùng đã đăng nhập vào hệ thống. 2. Người dùng là admin. 3. Người dùng đã ở giao diện quản lý thông tin nhân viên của toàn hệ thống.</td>
+    </tr>
+    <tr>
+        <td>Basic Path</td>
+        <td>1. Admin chọn”Thêm người dùng” trong trang quản lý thông tin người dùng của hệ thống.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>2. Admin nhập đầy đủ các trường email và mật khẩu để đăng ký cho người dùng mới. 3. Admin chọn”Tạo”.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4. Hệ thống ghi nhận thông tin admin vừa tạo và hiển thị thông báo tạo người dùng thành công.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>5. Admin vào phần hiển thị danh sách các email vừa được sử dụng để tạo người dùng mới.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>6. Admin chọn email trong danh sách đó.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>7. Admin điền đầy đủ các thông tin trong hồ sơ của người dùng mới vào công ty như: email, ngày sinh, tên đầy đủ, giới tính, mã nhân viên, vai trò của người dùng mới trong công ty. 8. Admin chọn”Save.</td>
+    </tr>
+    <tr>
+        <td>Alternative Paths</td>
+        <td>9. Hệ thống ghi nhận thông tin chi tiết của người dùng mới và hiển thị thông báo lưu thông tin chi tiết của người dùng mới thành công. Không</td>
+    </tr>
+    <tr>
+        <td>Postcondition</td>
+        <td>Người dùng mới được tạo và lưu thông tin chi tiết thành công.</td>
+    </tr>
+    <tr>
+        <td>Exception Paths</td>
+        <td>1. Admin không điền đầy đủ các trường thông tin khi tạo người dùng mới. 2. Admin điền sai định dạng mail được yêu cầu. 3. Admin không điền đủ các trường khi tạo thông tin chi tiết của người dùng.</td>
+    </tr>
+    <tr>
+        <td>Other</td>
+        <td>Không.</td>
+    </tr>
+</table>

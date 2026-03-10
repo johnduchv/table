@@ -1,0 +1,42 @@
+<table>
+    <tr>
+        <td>Tên Use Case Sự kiện kích hoạt</td>
+        <td>Đăng ký tài khoản Người dùng mở ứng dụng, chọn “Register” ở màn hình Welcome.</td>
+    </tr>
+    <tr>
+        <td>Tiền điều kiện</td>
+        <td>Người dùng chưa đăng nhập vào hệ thống.</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện chính</td>
+        <td>1. Người dùng chọn “Register” ở màn hình Welcome.</td>
+    </tr>
+    <tr>
+        <td>|</td>
+        <td>2. Hệ thống hiển thị màn hình đăng ký. 3. Người dùng nhập các thông tin cần thiết. 4. Người dùng ấn nút “Register”.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>5. Hệ thống gửi thông tin tài khoản đến Firebase Auth.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>6. Hệ thống nhận dữ liệu người dùng và Token đăng nhập từ Firebase Auth.</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện thay thế |</td>
+        <td>7. Hệ thống lưu Token để xác thực người dùng cho các phiên sau mà không cần đăng nhập lại. Người dùng chọn đăng ký bằng tài khoản Google thay vì nhập thông tin.</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện ngoại lệ |</td>
+        <td>1. Người dùng nhập thiếu thông tin. 2. Người dùng đăng ký tài khoản đã có sẵn trên hệ thống. 3. Người dùng nhập mật khẩu không trùng khớp</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>nhau.</td>
+    </tr>
+    <tr>
+        <td>Hậu điều kiện</td>
+        <td>Tài khoản mới được tạo và lưu trữ trong cơ sở dữ liệu Firebase.</td>
+    </tr>
+</table>

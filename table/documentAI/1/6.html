@@ -1,0 +1,50 @@
+<table>
+    <tr>
+        <td>Tên Use Case</td>
+        <td>Hỏi đáp, tra cứu từ tài liệu</td>
+    </tr>
+    <tr>
+        <td>Sự kiện kích hoạt</td>
+        <td>Tại màn hình chính, người dùng chọn tab “Chat”.</td>
+    </tr>
+    <tr>
+        <td>Tiền điều kiện</td>
+        <td>Người dùng đã đăng nhập vào hệ thống.</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện chính</td>
+        <td>1. Người dùng chọn vào tab “Chat”.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>2. Người dùng nhập nội dung cần hỏi, chọn tài liệu cần tra cứu nếu chưa có, sau đó ấn nút gửi.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>3. Hệ thống đọc nội dung từ tài liệu, và chia thành</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>các chunk, sau đó tải lên vector database. 4. Hệ thống tìm các chunk liên quan đến câu hỏi,</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>sau đó gửi các chunk này kèm nội dung câu hỏi đến Gemini. 5. Hệ thống nhận câu trả lời từ Gemini, sau đó hiển thị câu trả lời nhận được lên màn hình.</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện thay thế |</td>
+        <td>Không có.</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện ngoại lệ |</td>
+        <td>1. Tài liệu thuộc định dạng không hợp lệ hoặc vượt ngưỡng giới hạn dung lượng.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>2. Người dùng nhập truy vấn khác ngôn ngữ trong tài liệu hoặc không liên quan đến nội dung tài liệu.</td>
+    </tr>
+    <tr>
+        <td>Hậu điều kiện</td>
+        <td>Người dùng nhận được câu trả lời phù hợp.</td>
+    </tr>
+</table>

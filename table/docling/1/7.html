@@ -1,0 +1,30 @@
+<table>
+    <tr>
+        <td>Tên Use Case</td>
+        <td>Tuỳ chỉnh, chỉnh sửa thông tin tài khoản</td>
+    </tr>
+    <tr>
+        <td>Sự kiện kích hoạt</td>
+        <td>Tại màn hình chính, người dùng chọn tab có hình avatar, nếu không có avatar mặc định sẽ là logo của ứng dụng.</td>
+    </tr>
+    <tr>
+        <td>Tiền điều kiện</td>
+        <td>Người dùng đã đăng nhập vào hệ thống.</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện chính</td>
+        <td>1. Tại  màn  hình  chính,  người  dùng  chọn  tab  có hình avatar, nếu không có avatar mặc định sẽ là logo của ứng dụng. 2. Tại màn hình “Profile”, người dùng ấn vào nút có biểu tượng bánh răng ở góc phải trên. 3. Người dùng điền, chỉnh sửa các thông tin. 4. Người  dùng  ấn  “Save”  để  lưu  thông  tin  tài khoản. 5. Nếu avatar được thay đổi, hệ thống sẽ gửi file ảnh  đến  server  lưu  trữ  ảnh,  sau  đó  nhận  lại đường dẫn tới ảnh đó, thêm đường dẫn này vào thông tin sẽ được cập nhật. 6. Hệ thống kiểm tra thông tin. 7. Hệ thống gửi thông tin tài khoản đến Firebase Auth và Firebase Firestore để cập nhật, sau đó hiển thị dữ liệu mới lên trên giao diện</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện thay thế</td>
+        <td>Không có.</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện ngoại lệ</td>
+        <td>1. Các  thông  tin  người  dùng  nhập  không  đúng định dạng cho phép. 2. Username được chọn đã tồn tại. 3. File ảnh không đúng định dạng cho phép, vượt quá ngưỡng dung lượng hoặc kích thước.</td>
+    </tr>
+    <tr>
+        <td>Hậu điều kiện</td>
+        <td>Thông  tin  người  dùng  được  lưu  thành  công  vào trong  cơ  sở  dữ  liệu,  và  được  hiển  thị  cho  người dùng thấy.</td>
+    </tr>
+</table>

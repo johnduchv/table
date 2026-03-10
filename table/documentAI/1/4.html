@@ -1,0 +1,34 @@
+<table>
+    <tr>
+        <td>Tên Use Case</td>
+        <td>Sinh câu hỏi</td>
+    </tr>
+    <tr>
+        <td>Sự kiện kích hoạt</td>
+        <td>Người dùng chọn tính năng “Create Quiz” từ tab “Quizzes”</td>
+    </tr>
+    <tr>
+        <td>Tiền điều kiện</td>
+        <td>Người dùng đã đăng nhập vào hệ thống.</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện chính</td>
+        <td>1. Người dùng chọn vào tab “Quizzes”, sau đó chọn “Create Quiz”. 2. Hệ thống yêu cầu người dùng nhập văn bản,</td>
+    </tr>
+    <tr>
+        <td>|</td>
+        <td>liên kết hoặc tải tài liệu. 3. Người dùng cung cấp đầu vào. 4. Hệ thống xử lý tài liệu và gửi truy vấn đến Gemini. 5. Hệ thống xử lý câu trả lời từ Gemini. 6. Hệ thống hiển thị danh sách câu hỏi đã sinh, và lưu lại câu hỏi vào cơ sở dữ liệu.</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện thay thế |</td>
+        <td>Không có.</td>
+    </tr>
+    <tr>
+        <td>Luồng sự kiện ngoại lệ |</td>
+        <td>1. Tài liệu thuộc định dạng không hợp lệ hoặc vượt ngưỡng giới hạn dung lượng. 2. Gemini trả ra kết quả không hợp lí.</td>
+    </tr>
+    <tr>
+        <td>Hậu điều kiện</td>
+        <td>Câu hỏi được sinh thành công, và được lưu lại vào trong cơ sở dữ liệu.</td>
+    </tr>
+</table>

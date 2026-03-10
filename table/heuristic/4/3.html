@@ -1,0 +1,38 @@
+<table>
+    <tr>
+        <td>ctor</td>
+        <td>Users hoặc admin</td>
+    </tr>
+    <tr>
+        <td>Use Case Name</td>
+        <td>Quên mật khẩu</td>
+    </tr>
+    <tr>
+        <td>Trigger</td>
+        <td>Người dùng mở ứng dụng, chọn ‘Login’ ở màn hình Welcome  sau đó chọn ‘Forgot Password?’</td>
+    </tr>
+    <tr>
+        <td>Precondition</td>
+        <td>Người dùng chưa đăng nhập vào hệ thống.</td>
+    </tr>
+    <tr>
+        <td>Basic Path</td>
+        <td>1.  Người dùng nhập Email rồi ấn ‘Send Reset Password Link’.  2.  Hệ thống thông báo link đã được gửi nếu như email đó tồn  tại trong cơ sở dữ liệu.  3.  Hệ thống chuyển hướng người dùng quay lại trang đăng  nhập.</td>
+    </tr>
+    <tr>
+        <td>Alternative  Paths</td>
+        <td>Không</td>
+    </tr>
+    <tr>
+        <td>Postcondition</td>
+        <td>Link được gửi nếu email mà người dùng cung cấp tồn tại,  người dùng sử dụng link đó để cập nhật lại mật khẩu.</td>
+    </tr>
+    <tr>
+        <td>Exception Paths</td>
+        <td>1.  Người dùng nhập sai cú pháp Email.</td>
+    </tr>
+    <tr>
+        <td>Other</td>
+        <td>Không.</td>
+    </tr>
+</table>
